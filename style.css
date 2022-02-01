@@ -1,0 +1,23 @@
+/*
+Theme Name: IDM 250 Theme
+Theme URI: https://github.com/dylan-roussin/idm250-dmr395
+Author: Dylan Roussin
+Author URI: https://dylanroussin.com
+Description: Theme for my personal website
+Tags: Simple
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face { 
+  font-family: Rammetto-One-Regular; 
+  src: url(http://localhost/wp-content/themes/idm250/assets/fonts/rammettoone-regular.woff2); 
+  font-weight: normal; 
+  }
