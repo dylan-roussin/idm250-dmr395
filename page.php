@@ -4,10 +4,15 @@
 <div class="container">
   <h1 class=""><?php the_title(); ?>
   </h1>
+
+  <?php the_post_thumbnail(); ?>
+
   <div class="">
+    <!-- start content -->
     <?php the_content(); ?>
+    <!-- end content -->
   </div>
 </div>
 <?php endwhile; ?>
 
-<?php get_footer(); ?>
+<?php get_footer();

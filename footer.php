@@ -1,6 +1,6 @@
 <footer>
 <div class="footer-content">
-<p id="author">Made by Dylan Roussin</p>
+<p id="year">&copy; <?php echo date("Y"); ?> </p>
   <?php
     wp_nav_menu(
       [
@@ -9,11 +9,9 @@
     );
   ?>
 </footer>
-<div>
 <?php 
 // registered this menu in functions.php
 wp_footer(); ?>
-
 </body>
 
 </html>
