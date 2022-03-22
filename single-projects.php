@@ -5,7 +5,7 @@
   <main class="wrap">
     <h1 class=""><?php the_title(); ?>
     </h1>
-    <div style="margin-left: 20px;">
+    <div class="cate">
       <?php
         $terms = get_the_terms(get_the_ID(), 'project-categories');
         if ($terms) {

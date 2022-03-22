@@ -12,7 +12,7 @@
 <section class='searched'>
 <?php
 get_template_part(
-    'components/title-text',
+    'components/search-text',
     null,
     [
         'heading' => 'Search results for "' . $_GET['s'] . '"',

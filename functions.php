@@ -21,18 +21,21 @@ function include_styles()
         get_template_directory_uri() . '/dist/styles/main.css', // link to path of css
         []
     );
-}
+
 
     wp_enqueue_style(
         'idm250-normalize', // unique name 
-        get_template_directory_uri() . '/dist/styles/normalize.css' // link to path of css
+        get_template_directory_uri() . '/dist/styles/normalize.css', // link to path of css
+        []
     );
 
 
     wp_enqueue_style(
       'idm250-fonts', // unique name 
-      get_template_directory_uri() . '/dist/styles/fonts.css' // link to path of css
+      get_template_directory_uri() . '/dist/styles/fonts.css', // link to path of css
+      []
     );
+}
 
 // When WP performs this action, call our function
 add_action('wp_enqueue_scripts', 'include_styles');

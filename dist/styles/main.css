@@ -36,8 +36,6 @@ header {
   z-index: 10;
 }
 
-
-
 .stripe {
   background-color: #F57E20;
   width: 100vw;
@@ -87,24 +85,34 @@ header {
 .rst-txt h1 {
 	text-align: center;
 }
+.searched {
+	margin-bottom: 7rem;
+}
 .searched-results {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-flow: row;
-	justify-content: center;
+	flex-flow:  column;
+	align-items: center;
 }
 
 .searched-results .project-group {
-	flex-flow: column;
-	width: 20%;
-	height: fit-content;
+	flex-flow: row;
+	max-width: 70%;
+	height: 15rem;
 	padding: 0rem 1rem;
+	margin: 2rem 0;
 }
 .searched-results .project-group h2, p {
 	margin: 0;
 	padding: 0;
+}
+.searched h1 {
+	text-align: center;
+}
+.archived {
+	margin-bottom: 7rem;
 }
 .archived h1 {
 	text-align: center;
@@ -140,6 +148,7 @@ header {
 	display: flex;
 	flex-flow:  column;
 	align-items: center;
+	margin-bottom: 7rem;
 }
 .listed .project-group {
 	flex-flow: row;
@@ -213,6 +222,12 @@ header {
 	color: rgb(0, 136, 160);
 }
 .archived-results .project-group a:hover {
+	color: rgb(10, 62, 121);
+}
+.searched-results .project-group a {
+	color: rgb(0, 136, 160);
+}
+.searched-results .project-group a:hover {
 	color: rgb(10, 62, 121);
 }
 .project-item h2 {
@@ -289,6 +304,7 @@ a {
 .featured {
 	padding: 2.2rem 2rem;
 	background-color: #313131;
+	margin-bottom: 7rem;
 }
 .featured .project-group {
 	justify-content: center;
@@ -309,7 +325,7 @@ a {
 	padding: 0.6rem 2rem;
 	margin-top: 1rem;
 	margin-bottom: 1.2rem;
-	font-family: Rammetto;
+	font-family: Rammetto, sans-serif;
 }
 
 .ram {
@@ -369,22 +385,91 @@ p {
 	padding-top: 1rem;
 }
 
+/* SINGLE */
 .wrap {
 	padding: 0rem 15%;
 	margin-bottom: 10rem;
 }
+.single-projects h1 {
+	margin: 1rem 0 0.25rem;
+}
 .single-projects h2 {
-	margin: 0.5rem 0 0 0;
+	margin: 1rem 0 0rem 0;
 }
 .single-projects p {
-	padding-top: 1rem;
+	padding-top: 0.8rem;
 }
 
-
-
-
-
-
+.wrap a {
+	color: rgb(0, 136, 160);
+}
+.wrap a:hover {
+	color: rgb(10, 62, 121);
+}
+.cate {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+.wrap figure {
+	margin: 0;
+}
+.wrap figcaption {
+	border-top: 1px solid black;
+	padding-top: 0.5rem;
+	font-style: italic;
+}
+/* page */
+.wrap button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #EA663F;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 2rem;
+  margin: 0.4rem 0;
+}
+.wrap button:hover {
+  background-color: #cf3000;
+}
+.wrap blockquote {
+	background-color: #EA663F;
+	padding: 1.2rem;
+	color: white;
+}
+.wrap h4 {
+	margin-bottom: 0.25rem;
+}
+.wrap h5 {
+	margin-bottom: 0.25rem;
+}
+.wrap h6 {
+	margin-bottom: 0.25rem;
+}
+.wrap table, th, td {
+  border: 1px solid;
+}
+.wrap th {
+	padding: 0.5rem 2rem;
+}
+.wrap td {
+	padding: 0.5rem 0.5rem;
+}
+.wrap table {
+		border-collapse: collapse;
+		margin: 0 auto;
+		margin-top: 1rem;
+		width: 100%;
+	
+}
+.wrap iframe {
+	margin-top: 1rem;
+	width: 100%;
+	height: 50vh;
+}
 
 @media only screen and (max-width: 1092px) {
 .listed .project-group {
